@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #23242a;
+}
+
+.content-box{
+  background: #1c1c1c;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5%;
+  box-shadow: 0 0 1rem black;
+}
+
+.formulario{
+  display: flex;
+  flex-direction: column;
+}
+
+h1{
+  color: #45f3ff;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 2px;
+  position: absolute;
+  margin-top: -12%;
+  margin-left: 22%;
+}
+
+input{
+  position: relative;
+  width: 300px;
+  height: 40px;
+  background: transparent;
+  border-radius: 10px;
+  border: #1c1c1c;
+  padding: 10px;
+  transition: 0.3s ease;
+  border: 1px solid #45f3ff;
+}
+
+input:hover{
+  border: 1px solid #ffffff;
+  transform: scale(1.05);
+}
+
+input:focus{
+  color:#45f3ff;
+}
+
+label{
+  font-family: 'Open Sans', sans-serif;
+  color: #45f3ff;
+  margin-top: 20px;
+}
+
+.btn{
+  height: 35px;
+  border-radius: 5px;
+  background: #45f3ff;
+  border: none;
+  font-size: 15px;
+  margin-top: 5%;
+  transition: 0.3s ease;
+  box-shadow: 0 0 1rem rgb(255, 255, 255);
+}
+
+.btn:hover{
+  opacity: 0.5;
+  transform: scale(1.05);
+}
+
+a{
+  text-decoration: none;
+  color: #4c4c4c;
+}
+
+h5{
+  position: relative;
+  font-size: 15px;
+}
+
+h4{
+  margin-left: 80%;
+  margin-top: -12%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: #45f3ff;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+    margin-left: 120px;
+    margin-top: -5px;
+  }
+
+  .content-box{
+    padding: 1%;
+    max-width: 20rem;
+    max-height: 20rem;
+  }
+}
